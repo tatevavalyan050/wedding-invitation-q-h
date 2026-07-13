@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hovo and Kristina Wedding//HY
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kristina-hovo-wedding-20260929@wedding
+DTSTAMP:20260624T153000Z
+DTSTART:20260929T130000Z
+DTEND:20260929T190000Z
+SUMMARY:Հովոյի և Քրիստինայի հարսանիք
+DESCRIPTION:Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին։\n12:00 — Հարսի տուն, գյուղ Գեղանիստ, 10-րդ փողոց, 52 տուն\n14:00 — Փեսայի տուն, գյուղ Գոռավան, Հովհաննես Շիրազի փողոց, տուն 31\n16:00 — Եկեղեցական արարողություն, Արտաշատի Սուրբ Հովհաննես եկեղեցի\n18:00 — Հարսանյաց հանդիսություն\nՎայր՝ «Հրաշք Այգի» ռեստորանային համալիր
+LOCATION:«Հրաշք Այգի» ռեստորանային համալիր, Դիտակ գյուղ, Գևորգյան փող., 1 շենք
+END:VEVENT
+END:VCALENDAR

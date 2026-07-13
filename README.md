@@ -38,7 +38,7 @@ This is a **static site** — no build step. Upload the folder as-is.
 1. Push to GitHub (already done)
 2. Repo → **Settings** → **Pages**
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**
-4. After the next push, the site will be at `https://tatevavalyan050.github.io/wedding-invitation/`
+4. After the next push, the site will be at `https://tatevavalyan050.github.io/wedding-invitation-q-h/`
 
 ### Netlify
 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Սիրով հրավիրում ենք Ձեզ Հովոյի և Քրիստինայի հարսանիքին՝ 29 սեպտեմբերի, 2026" />
+  <meta name="theme-color" content="#111111" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hy_AM" />
+  <meta property="og:title" content="Հովո և Քրիստինա | Հարսանիք" />
+  <meta property="og:description" content="Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին՝ 29 սեպտեմբերի, 2026" />
+  <meta property="og:image" content="images/IMG_4243.JPG" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Հովո և Քրիստինա | Հարսանիք" />
+  <meta name="twitter:description" content="Սիրով հրավիրում ենք Ձեզ մեր հարսանիքին՝ 29 սեպտեմբերի, 2026" />
+  <meta name="twitter:image" content="images/IMG_4243.JPG" />
+  <title>Հովո և Քրիստինա | Հարսանիք</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="images/IMG_4243.JPG" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preload" as="audio" href="music/background-music.mp3" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Armenian:wght@300;400;500;600&family=Noto+Serif+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/music.js"></script>
+
+  <audio id="background-music" preload="auto" autoplay loop playsinline>
+    <source src="music/background-music.mp3" type="audio/mpeg" />
+    <span data-i18n="audio.fallback">Ձեր դիտարկիչը չի աջակցում ձայնային նվագարկումը։</span>
+  </audio>
+
+  <div class="lang-switch" id="lang-switch" role="group" aria-label="Language">
+    <button type="button" class="lang-switch__btn is-active" data-lang="hy" aria-pressed="true">AM</button>
+    <button type="button" class="lang-switch__btn" data-lang="ru" aria-pressed="false">RU</button>
+    <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--one"></span>
+    <span class="ambient__orb ambient__orb--two"></span>
+    <span class="ambient__orb ambient__orb--three"></span>
+    <span class="ambient__petal ambient__petal--one"></span>
+    <span class="ambient__petal ambient__petal--two"></span>
+    <span class="ambient__petal ambient__petal--three"></span>
+  </div>
+
+  <nav class="nav" id="nav" data-i18n-aria="nav.aria" aria-label="Հիմնական նավիգացիա">
+    <a href="#hero" data-i18n="nav.home">Սկիզբ</a>
+    <a href="#schedule" data-i18n="nav.schedule">Ծրագիր</a>
+    <a href="#rsvp" data-i18n="nav.contact">Կապ</a>
+  </nav>
+
+  <nav class="nav-bottom" id="nav-bottom" data-i18n-aria="nav.ariaMobile" aria-label="Բջջային նավիգացիա">
+    <a href="#hero"><span class="nav-bottom__icon" aria-hidden="true">♥</span><span data-i18n="nav.home">Սկիզբ</span></a>
+    <a href="#schedule"><span class="nav-bottom__icon" aria-hidden="true">◷</span><span data-i18n="nav.schedule">Ծրագիր</span></a>
+    <a href="#rsvp"><span class="nav-bottom__icon" aria-hidden="true">☎</span><span data-i18n="nav.contact">Կապ</span></a>
+  </nav>
+
+  <header class="hero reveal" id="hero">
+    <div class="hero__media">
+      <img src="images/IMG_4243.JPG" alt="Հովո և Քրիստինա" fetchpriority="high" decoding="async" />
+    </div>
+
+    <div class="hero__card">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Սիրով հրավիրում ենք Ձեզ</p>
+      <h1 class="hero__names">
+        <span data-i18n="hero.groom">Հովո</span>
+        <small data-i18n="hero.and">և</small>
+        <span data-i18n="hero.bride">Քրիստինա</span>
+      </h1>
+      <p class="hero__text" data-i18n="hero.text">Եկեք կիսեք մեզ հետ մեր կյանքի ամենալուսավոր և սիրառատ օրը</p>
+      <div class="hero__date">
+        <span></span>
+        <time datetime="2026-09-29T00:00">29.09.2026</time>
+        <span></span>
+      </div>
+      <a class="btn" href="#schedule" data-i18n="hero.cta">Տեսնել օրվա ծրագիրը</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="countdown-section reveal" aria-labelledby="countdown-label">
+      <p class="eyebrow" id="countdown-label" data-i18n="countdown.label">Մինչև մեր մեծ օրը</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown__item">
+          <span class="countdown__num" data-unit="days">00</span>
+          <span class="countdown__label" data-i18n="countdown.days">օր</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__num" data-unit="hours">00</span>
+          <span class="countdown__label" data-i18n="countdown.hours">ժամ</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__num" data-unit="minutes">00</span>
+          <span class="countdown__label" data-i18n="countdown.minutes">րոպե</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__num" data-unit="seconds">00</span>
+          <span class="countdown__label" data-i18n="countdown.seconds">վայրկյան</span>
+        </div>
+      </div>
+      <p class="countdown__wedding-day" id="countdown-wedding-day" data-i18n="countdown.weddingDay" hidden>Այսօր մեր հարսանիքն է</p>
+    </section>
+
+    <section class="section schedule" id="schedule">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="schedule.eyebrow">Ծրագիր</p>
+          <h2 data-i18n="schedule.title">Մեր օրվա գեղեցիկ պահերը</h2>
+        </div>
+
+        <div class="dayline">
+          <div class="schedule__photos reveal">
+            <figure class="schedule__photo">
+              <img src="images/IMG_4442.JPG" alt="Հովո և Քրիստինա" loading="lazy" />
+            </figure>
+            <figure class="schedule__photo">
+              <img src="images/IMG_9801.jpeg" alt="Հովո և Քրիստինա" loading="lazy" />
+            </figure>
+          </div>
+
+          <article class="dayline__item reveal">
+            <time>12:00</time>
+            <div>
+              <h3 data-i18n="schedule.bride">Հարսի տուն</h3>
+              <p data-i18n="schedule.brideAddr">գյուղ Գեղանիստ, Արարատ · 10-րդ փողոց, 52 տուն</p>
+              <a href="https://yandex.com/maps/?text=Geghanist%20Ararat%2010th%20street%2052%20Armenia" target="_blank" rel="noopener noreferrer" data-i18n="schedule.map">Քարտեզ</a>
+            </div>
+          </article>
+
+          <article class="dayline__item reveal">
+            <time>14:00</time>
+            <div>
+              <h3 data-i18n="schedule.groom">Փեսայի տուն</h3>
+              <p data-i18n="schedule.groomAddr">գյուղ Գոռավան · Հովհաննես Շիրազի փողոց, տուն 35</p>
+              <a href="https://yandex.com/maps/?ll=44.737692%2C39.905575&z=17&pt=44.737692,39.905575" target="_blank" rel="noopener noreferrer" data-i18n="schedule.map">Քարտեզ</a>
+            </div>
+          </article>
+
+          <article class="dayline__item reveal">
+            <time>16:00</time>
+            <div>
+              <h3 data-i18n="schedule.church">Պսակի արարողություն</h3>
+              <p data-i18n="schedule.churchAddr">Արտաշատի Սուրբ Հովհաննես եկեղեցի</p>
+              <a href="https://yandex.com/maps/org/surb_hovhannes_yekeghetsi/131197365755/?ll=44.548766%2C39.953859&z=13" target="_blank" rel="noopener noreferrer" data-i18n="schedule.map">Քարտեզ</a>
+            </div>
+          </article>
+
+          <article class="dayline__item dayline__item--accent reveal">
+            <time>18:00</time>
+            <div>
+              <h3 data-i18n="schedule.party">Հարսանյաց տոն</h3>
+              <p data-i18n="schedule.partyAddr">Ոսկե Ծիրան Պրեմիում Հոլլ</p>
+              <a href="https://yandex.com/maps/-/CPhuASzG" target="_blank" rel="noopener noreferrer" data-i18n="schedule.map">Քարտեզ</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="container">
+        <div class="rsvp__card reveal">
+          <figure class="rsvp__photo">
+            <img src="images/IMG_4240.JPG" alt="Հովո և Քրիստինա" loading="lazy" />
+          </figure>
+
+          <div>
+            <p class="eyebrow" data-i18n="rsvp.eyebrow">Հաստատում</p>
+            <h2 data-i18n="rsvp.title">Կապ և մասնակցության հաստատում</h2>
+            <p data-i18n="rsvp.text">Սիրով սպասում ենք Ձեզ։ Մասնակցությունը հաստատելու կամ հարցերի դեպքում կարող եք կապ հաստատել մեզ հետ։</p>
+          </div>
+
+          <div class="contact-list">
+            <a href="tel:+37477133702">
+              <span data-i18n="hero.groom">Հովո</span>
+              <strong>+374 77 133 702</strong>
+            </a>
+            <a href="tel:+37495441451">
+              <span data-i18n="hero.bride">Քրիստինա</span>
+              <strong>+374 95 441 451</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.note">Սիրով և երախտագիտությամբ</p>
+    <strong data-i18n="footer.names">Հովո և Քրիստինա · 29.09.2026</strong>
+  </footer>
+
+  <script src="js/music.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
